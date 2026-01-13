@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自习课噪音监控系统 - AI智能版</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- TensorFlow.js for AI features -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0/dist/tf.min.js"></script>
+    <script src="noiseAI.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔇 自习课噪音监控系统</h1>
+            <p class="subtitle">实时监测环境噪音，维护安静学习环境</p>
+        </header>
+
+        <div class="main-content">
+            <!-- 状态面板 -->
+            <div class="status-panel">
+                <div class="status-card">
+                    <div class="status-label">当前噪音分贝</div>
+                    <div class="decibel-display" id="decibelDisplay">--</div>
+                    <div class="decibel-unit">dB</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-label">警告次数</div>
+                    <div class="warning-count" id="warningCount">0</div>
+                    <div class="warning-label">/ 3</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-label">监控状态</div>
+                    <div class="monitor-status" id="monitorStatus">未启动</div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-label">噪音类型识别</div>
+                    <div class="noise-type-display" id="noiseTypeDisplay">--</div>
+                    <div class="noise-type-label" id="noiseTypeLabel">等待识别...</div>
+                </div>
+            </div>
+
+            <!-- 可视化区域 -->
+            <div class="visualization-panel">
+                <div class="waveform-container">
+                    <canvas id="waveformCanvas"></canvas>
+                </div>
+                <div class="level-indicator">
+                    <div class="level-bar">
+                        <div class="level-fill" id="levelFill"></div>
+                    </div>
+                    <div class="level-labels">
+                        <span>安静</span>
+                        <span>正常</span>
+                        <span class="warning-level">警告 (80dB)</span>
+                        <span class="danger-level">危险</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 警告提示 -->
+            <div class="alert-container" id="alertContainer"></div>
+
+            <!-- 控制面板 -->
+            <div class="control-panel">
+                <button class="btn btn-primary" id="startBtn">开始监控</button>
+                <button class="btn btn-secondary" id="stopBtn" disabled>停止监控</button>
+                <button class="btn btn-danger" id="resetBtn">重置警告</button>
+                <button class="btn btn-secondary" id="notifyBtn">开启通知</button>
+            </div>
+
+            <!-- 录制状态 -->
+            <div class="recording-panel" id="recordingPanel" style="display: none;">
+                <div class="recording-indicator">
+                    <span class="recording-dot"></span>
+                    <span>正在录制音频和视频...</span>
+                </div>
+                <div class="note-box">
+                    <label for="noteInput">事件备注（可选）</label>
+                    <textarea id="noteInput" placeholder="例如：第3次警告后自动录制，课堂自习" rows="2"></textarea>
+                </div>
+                <div class="video-preview">
+                    <video id="videoPreview" autoplay muted playsinline></video>
+                </div>
+                <button class="btn btn-success" id="stopRecordingBtn">停止录制并保存</button>
+            </div>
+
+            <!-- 下载区域 -->
+            <div class="download-panel" id="downloadPanel" style="display: none;">
+                <h3>录制文件已保存</h3>
+                <div class="download-buttons">
+                    <a id="downloadAudio" class="btn btn-download" download>下载音频</a>
+                    <a id="downloadVideo" class="btn btn-download" download>下载视频</a>
+                </div>
+            </div>
+
+            <!-- AI智能分析面板 -->
+            <div class="ai-analysis-panel">
+                <h3>🤖 AI智能分析</h3>
+                <div class="ai-features">
+                    <div class="ai-feature-item">
+                        <button class="btn btn-primary" id="smartThresholdBtn">智能阈值推荐</button>
+                        <span id="smartThresholdValue" class="ai-result">--</span>
+                    </div>
+                    <div class="ai-feature-item">
+                        <button class="btn btn-primary" id="generateReportBtn">生成纪律报告</button>
+                    </div>
+                    <div class="ai-feature-item">
+                        <button class="btn btn-secondary" id="learningAnalysisBtn">学习效率分析</button>
+                    </div>
+                </div>
+                <div id="aiAnalysisResult" class="ai-analysis-result"></div>
+            </div>
+
+            <!-- 设置面板 -->
+            <div class="settings-panel">
+                <h3>设置</h3>
+                <div class="setting-item">
+                    <label for="thresholdInput">警告阈值 (分贝):</label>
+                    <input type="number" id="thresholdInput" value="80" min="0" max="120">
+                    <button class="btn btn-small" id="applySmartThreshold" style="display: none;">应用推荐值</button>
+                </div>
+                <div class="setting-item">
+                    <label for="maxWarningsInput">最大警告次数:</label>
+                    <input type="number" id="maxWarningsInput" value="3" min="1" max="10">
+                </div>
+                <div class="setting-item">
+                    <label for="releaseMarginInput">恢复判定偏移 (分贝):</label>
+                    <input type="number" id="releaseMarginInput" value="5" min="0" max="30">
+                </div>
+                <div class="setting-item">
+                    <label for="stopDelayInput">恢复后自动停止 (毫秒):</label>
+                    <input type="number" id="stopDelayInput" value="5000" min="500" step="500" max="600000">
+                </div>
+            </div>
+
+            <!-- 历史记录面板 -->
+            <div class="history-panel">
+                <div class="history-header">
+                    <h3>📁 录制历史记录</h3>
+                    <div class="history-actions">
+                        <input type="text" id="historySearch" placeholder="搜索备注/时间..." />
+                        <button class="btn btn-small" id="exportCsvBtn">导出CSV</button>
+                        <button class="btn btn-small" id="refreshHistoryBtn">刷新</button>
+                        <button class="btn btn-small btn-danger" id="clearHistoryBtn">清空全部</button>
+                    </div>
+                </div>
+                <div class="history-list" id="historyList">
+                    <div class="history-empty">暂无录制记录</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

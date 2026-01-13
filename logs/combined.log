@@ -1,0 +1,53 @@
+{"level":"info","message":"创建上传目录: uploads","timestamp":"2026-01-07T04:54:18.156Z"}
+{"level":"info","message":"\n🚀 自习课噪音监控系统后端已启动!\n------------------------------------\n📡 本地访问: http://localhost:3000\n🌐 API地址: http://localhost:3000/api\n📁 文件上传: http://localhost:3000/uploads\n📊 系统状态: http://localhost:3000/health\n------------------------------------\n👤 默认管理员账号: admin / admin123\n⚠️  请立即修改默认密码！\n","timestamp":"2026-01-07T04:54:18.470Z"}
+{"level":"info","message":"数据库初始化完成","timestamp":"2026-01-07T04:54:18.592Z"}
+{"level":"info","message":"\n🚀 自习课噪音监控系统后端已启动!\n------------------------------------\n📡 本地访问: http://localhost:3000\n🌐 API地址: http://localhost:3000/api\n📁 文件上传: http://localhost:3000/uploads\n📊 系统状态: http://localhost:3000/health\n------------------------------------\n👤 默认管理员账号: admin / admin123\n⚠️  请立即修改默认密码！\n","timestamp":"2026-01-07T05:19:32.222Z"}
+{"level":"info","message":"数据库初始化完成","timestamp":"2026-01-07T05:19:32.340Z"}
+{"level":"info","message":"GET / - ::1","timestamp":"2026-01-07T05:25:43.255Z"}
+{"level":"info","message":"GET /favicon.ico - ::1","timestamp":"2026-01-07T05:25:43.301Z"}
+{"level":"info","message":"\n🚀 自习课噪音监控系统后端已启动!\n------------------------------------\n📡 本地访问: http://localhost:3000\n🌐 API地址: http://localhost:3000/api\n📁 文件上传: http://localhost:3000/uploads\n📊 系统状态: http://localhost:3000/health\n------------------------------------\n👤 默认管理员账号: admin / admin123\n⚠️  请立即修改默认密码！\n","timestamp":"2026-01-07T05:33:42.465Z"}
+{"level":"info","message":"数据库初始化完成","timestamp":"2026-01-07T05:33:42.582Z"}
+{"level":"info","message":"GET /api - ::1","timestamp":"2026-01-07T05:34:34.150Z"}
+{"level":"info","message":"\n🚀 自习课噪音监控系统后端已启动!\n------------------------------------\n📡 本地访问: http://localhost:3000\n🌐 API地址: http://localhost:3000/api\n📁 文件上传: http://localhost:3000/uploads\n📊 系统状态: http://localhost:3000/health\n------------------------------------\n👤 默认管理员账号: admin / admin123\n⚠️  请立即修改默认密码！\n","timestamp":"2026-01-07T05:39:30.364Z"}
+{"level":"info","message":"数据库初始化完成","timestamp":"2026-01-07T05:39:30.481Z"}
+{"level":"info","message":"POST /api/auth/login - ::1","timestamp":"2026-01-07T05:40:10.742Z"}
+{"level":"info","message":"POST /api/users - ::1","timestamp":"2026-01-07T05:40:25.745Z"}
+{"level":"info","message":"GET /api/analysis/discipline-report?format=html&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc2NDQxMCwiZXhwIjoxNzY3ODUwODEwfQ._01-L6dhItvZKs0WQhCTLQAqVQ0T6lWxj6AKoCQ-9ro - ::1","timestamp":"2026-01-07T05:40:37.701Z"}
+{"level":"info","message":"GET /favicon.ico - ::1","timestamp":"2026-01-07T05:40:37.726Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc2NDQxMCwiZXhwIjoxNzY3ODUwODEwfQ._01-L6dhItvZKs0WQhCTLQAqVQ0T6lWxj6AKoCQ-9ro - ::1","timestamp":"2026-01-07T05:40:41.986Z"}
+{"level":"info","message":"GET /api/users?page=1&limit=50 - ::1","timestamp":"2026-01-07T05:40:47.967Z"}
+{"level":"info","message":"\n🚀 自习课噪音监控系统后端已启动!\n------------------------------------\n📡 本地访问: http://localhost:3000\n🌐 API地址: http://localhost:3000/api\n📁 文件上传: http://localhost:3000/uploads\n📊 系统状态: http://localhost:3000/health\n------------------------------------\n👤 默认管理员账号: admin / admin123\n⚠️  请立即修改默认密码！\n","timestamp":"2026-01-07T05:47:29.305Z"}
+{"level":"info","message":"数据库初始化完成","timestamp":"2026-01-07T05:47:29.422Z"}
+{"level":"info","message":"POST /api/auth/login - ::1","timestamp":"2026-01-07T08:27:53.758Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T08:32:30.335Z"}
+{"level":"info","message":"GET /api/users?page=1&limit=50 - ::1","timestamp":"2026-01-07T08:32:33.790Z"}
+{"level":"info","message":"GET /api/analysis/discipline-report?format=html&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T08:32:41.796Z"}
+{"level":"info","message":"GET /favicon.ico - ::1","timestamp":"2026-01-07T08:32:41.813Z"}
+{"level":"info","message":"GET /.well-known/appspecific/com.chrome.devtools.json - ::1","timestamp":"2026-01-07T08:33:07.881Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T08:34:21.774Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T08:34:29.997Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T08:34:32.109Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T08:34:34.140Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T08:34:37.485Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T08:35:01.444Z"}
+{"level":"info","message":"\n🚀 自习课噪音监控系统后端已启动!\n------------------------------------\n📡 本地访问: http://localhost:3000\n🌐 API地址: http://localhost:3000/api\n📁 文件上传: http://localhost:3000/uploads\n📊 系统状态: http://localhost:3000/health\n------------------------------------\n👤 默认管理员账号: admin / admin123\n⚠️  请立即修改默认密码！\n","timestamp":"2026-01-07T09:26:30.066Z"}
+{"level":"info","message":"数据库初始化完成","timestamp":"2026-01-07T09:26:30.183Z"}
+{"level":"info","message":"GET /favicon.ico - ::1","timestamp":"2026-01-07T09:26:43.333Z"}
+{"level":"info","message":"GET /api/analysis/discipline-report?format=html&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T09:31:55.460Z"}
+{"level":"info","message":"GET /system-info - ::1","timestamp":"2026-01-07T09:32:05.857Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2Nzc3NDQ3MywiZXhwIjoxNzY3ODYwODczfQ.wlOlU5nUwjdJJmdslsASd7fnZHzEc4X0XgiIm5Gqcqc - ::1","timestamp":"2026-01-07T09:32:12.097Z"}
+{"level":"info","message":"GET /favicon.ico - ::1","timestamp":"2025-12-30T09:32:44.309Z"}
+{"level":"info","message":"POST /api/auth/login - ::1","timestamp":"2025-12-30T09:37:03.915Z"}
+{"level":"info","message":"GET /api/analysis/discipline-report?format=html&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2NzA4NzQyNCwiZXhwIjoxNzY3MTczODI0fQ.VfjAlqmdpWLZLfsXsVgrfC4Rmjo2wtftfENwOgBvKFw - ::1","timestamp":"2025-12-30T09:37:07.041Z"}
+{"level":"info","message":"GET /api/users?page=1&limit=50 - ::1","timestamp":"2025-12-30T09:37:11.187Z"}
+{"level":"info","message":"POST /api/auth/login - ::1","timestamp":"2025-12-30T09:37:23.507Z"}
+{"level":"info","message":"GET /api/users?page=1&limit=50 - ::1","timestamp":"2025-12-30T09:37:26.626Z"}
+{"level":"info","message":"GET /api/recordings/export/csv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2NzA4NzQ0MywiZXhwIjoxNzY3MTczODQzfQ.FgMDuz9tOufTUxA9DcYCOTKLTpfcnb5q9_HoqL35YyI - ::1","timestamp":"2025-12-30T09:37:27.737Z"}
+{"level":"info","message":"GET /api/analysis/discipline-report?format=html&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc2NzA4NzQ0MywiZXhwIjoxNzY3MTczODQzfQ.FgMDuz9tOufTUxA9DcYCOTKLTpfcnb5q9_HoqL35YyI - ::1","timestamp":"2025-12-30T09:37:29.080Z"}
+{"level":"info","message":"GET /api/users?page=1&limit=50 - ::1","timestamp":"2025-12-30T09:37:34.082Z"}
+{"level":"info","message":"\n🚀 自习课噪音监控系统后端已启动!\n------------------------------------\n📡 本地访问: http://localhost:3000\n🌐 API地址: http://localhost:3000/api\n📁 文件上传: http://localhost:3000/uploads\n📊 系统状态: http://localhost:3000/health\n------------------------------------\n👤 默认管理员账号: admin / admin123\n⚠️  请立即修改默认密码！\n","timestamp":"2025-12-30T09:56:44.586Z"}
+{"level":"info","message":"数据库初始化完成","timestamp":"2025-12-30T09:56:44.704Z"}
+{"level":"info","message":"GET /favicon.ico - ::1","timestamp":"2025-12-30T09:56:51.193Z"}
+{"level":"info","message":"\n🚀 自习课噪音监控系统后端已启动!\n------------------------------------\n📡 本地访问: http://localhost:3000\n🌐 API地址: http://localhost:3000/api\n📁 文件上传: http://localhost:3000/uploads\n📊 系统状态: http://localhost:3000/health\n------------------------------------\n👤 默认管理员账号: admin / admin123\n⚠️  请立即修改默认密码！\n","timestamp":"2026-01-13T08:11:35.896Z"}
+{"level":"info","message":"数据库初始化完成","timestamp":"2026-01-13T08:11:36.026Z"}
+{"level":"info","message":"GET /favicon.ico - ::1","timestamp":"2026-01-13T08:11:44.543Z"}
